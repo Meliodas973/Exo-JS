@@ -5,15 +5,16 @@ class Contact {
        this.nom = nom;
        this.prenom = prenom; 
        this.email = email;
-    }   
+    }  
+    
+
+    // 3 - Fiche d'information du Contact
+
+    displayInfo = () => {
+        console.log(this.nom + ' ' + this.prenom + ' ' + this.email);
+    }
 }
-console.log(Contact)
 
-// 3 - Fiche d'information du Contact
+let contact = new Contact ('Antonio', 'Aurélien', 'email: contact@aurelienantonio.com')
 
-let contact = displayInfo(
-    "Antonio",
-    "Aurélien", 
-    "email: contact@aurelienantonio.com");
-
-console.log(displayInfo);
+console.log(contact)

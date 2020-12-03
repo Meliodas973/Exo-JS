@@ -2,4 +2,6 @@
 
 let personne = ['Adrien', 'David']
 
-console.log(personne)
+// 3
+console.log('Adrien'.displayInfo(new Contact))
+
