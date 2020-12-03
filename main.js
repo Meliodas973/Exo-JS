@@ -1,7 +1,5 @@
-class Contact {
-    information(nim, prenom, email) {
-       this.nom = Siong;
-       this.prenom = Toubon; 
-       this.email = Meliodas45@hotmail.com;
-    }   
-}
+// 2 - Plusieurs contacts
+
+let personne = ['Adrien', 'David']
+
+console.log(personne)
