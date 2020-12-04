@@ -8,7 +8,7 @@ class Contact {
     }  
     
 
-    // 3 - Fiche d'information du Contact
+    // 3 - Fiche d'information du Contact // à été aider mais ne comprends pas trop
 
     displayInfo = () => {
         console.log(this.nom + ' ' + this.prenom + ' ' + this.email);

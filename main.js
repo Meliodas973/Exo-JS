@@ -1,7 +1,7 @@
 // 2 - Plusieurs contacts
 
-let personne = ['Adrien', 'David']
+let personne = ['Adrien', 'David'];
 
 // 3
-console.log('Adrien'.displayInfo(new Contact))
+console.log(constructor.displayInfo(new Contact))
 
