@@ -1,7 +1,8 @@
-// 2 - Plusieurs contacts
+// 2
+let contact1 = new Contact ('B', 'Yoan', 'y.bourgeois@email.com')
+console.log(contact1);
 
-let personne = ['Adrien', 'David'];
+let contact2 = new Contact ('Siong', 'Toubon', 'toubon@email.com')
+console.log(contact2);
 
-// 3
-console.log(constructor.displayInfo(new Contact))
-
+contact1.displayInfo()
