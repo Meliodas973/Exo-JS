@@ -7,7 +7,7 @@ class Contact {
        this.email = email;
        this.isStringOk(nom);
        this.isStringOk(prenom);
-
+       this.checkEmail(email);
     }  
     
 
@@ -33,5 +33,17 @@ class Contact {
     }
 }
 
-// 4 
+function Test_adresse_email(email) {
+    var reg = RegExp('^[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*@[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*[\.]{1}[a-z]{2,6}$', 'i');
+ 
+    if(reg.test(email))
+      {
+		return(true);
+      }
+    else
+      {
+		return(false);
+      }
+}
+
 

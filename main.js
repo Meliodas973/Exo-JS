@@ -1,5 +1,5 @@
 // 2
-let contact1 = new Contact ('B', 'Yoan', 'y.bourgeois@email.com')
+let contact1 = new Contact ('Bourgeois', 'Yoan', 'y.bourgeois@email.com')
 console.log(contact1);
 
 let contact2 = new Contact ('Siong', 'Toubon', 'toubon@email.com')
