@@ -2,12 +2,12 @@
 
 class Contact {
     constructor(nom, prenom, email) {
-       this.nom = nom;
+       this.nom =  this.isStringOk(nom) ? nom : this.setString("nom");
        this.prenom = prenom; 
        this.email = email;
        this.isStringOk(nom);
        this.isStringOk(prenom);
-       this.checkEmail(email);
+       this.isEmailOk(email);
     }  
     
 
@@ -31,19 +31,23 @@ class Contact {
         console.warn(`${entry} is too short`)
         return false;
     }
+
+    setString(name){
+        let str = prompt(`Entrer un ${name} de 2 caractères ou plus`);
+        if(this.isStringOk(str)){
+            return str;
+        }else{
+            return this.setString(name);
+        }
+    }
+
+    isEmailOk = (email) => {
+        var reg = new RegExp('^[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*@[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*[\.]{1}[a-z]{2,6}$', 'i');
+        console.log("email", reg.test(email));
+        return(reg.test(email));
+    }
 }
 
-function Test_adresse_email(email) {
-    var reg = RegExp('^[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*@[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*[\.]{1}[a-z]{2,6}$', 'i');
- 
-    if(reg.test(email))
-      {
-		return(true);
-      }
-    else
-      {
-		return(false);
-      }
-}
+
 
 
