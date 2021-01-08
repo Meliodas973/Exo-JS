@@ -49,5 +49,26 @@ class Contact {
 }
 
 
+//=================
 
 
+class ContactManager {
+    listeDeContact(nom, prenom, email) {
+        this.nom = nom;
+        this.prenom = prenom; 
+        this.email = email;
+        this.isStringOk(nom);
+        this.isStringOk(prenom);
+        this.isEmailOk(email);
+    }
+
+    displayMenu = () => {
+        console.log(' nom: ' + this.nom + ' prenom: ' + this.prenom + ' email: ' + this.email);
+    }
+}
+
+do {
+        var choix = (prompt("Que souhaitez-vous faire ?\n\n 1 - Lister les contacts\n 2 - Ajouter un nouveau contact\n 3 - Supprimer un contact\n 4 - Quitter le gestionnaire de contacts\n"));
+    } while(choix != 1 && choix != 2 && choix != 3 && choix != 4)
+    
+   
