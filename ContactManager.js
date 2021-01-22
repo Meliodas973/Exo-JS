@@ -8,7 +8,7 @@ class ContactManager {
         switch (choix) {
             case '1':
                 console.log("Entrée 1");
-                this.displayMenu();
+                this.listerContact();
                 break;
             case '2':
                 console.log("Entrée 2");
@@ -26,6 +26,14 @@ class ContactManager {
                 this.displayMenu();
                 break;
         }
+    }
+
+    listerContact() {
+        console.log("liste des contact");
+            this.contacts.forEach((Contact) => {
+                console.log(Contact + contact.displayInfo());    
+            });
+
     }
 }
 
